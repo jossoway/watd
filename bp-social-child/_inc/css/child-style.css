@@ -33,3 +33,10 @@ float: none !important;
 margin-top: 10px;
 border-top: solid 1px #ccc;
 }
+
+
+#profile-social-login-section
+{
+float: right;
+width: 48%;
+}

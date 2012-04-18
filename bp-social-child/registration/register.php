@@ -38,7 +38,6 @@ $('#basic-details-section input#signup_username').bind('keyup keypress blur', fu
 
 				<p><?php _e( 'Registering for this site is easy, just fill in the fields below and we\'ll get a new account set up for you in no time.', 'buddypress' ) ?></p>
 				
-				<?php do_action('oa_social_login'); ?>
 
 				<?php do_action( 'bp_before_account_details_fields' ) ?>
 
@@ -46,7 +45,7 @@ $('#basic-details-section input#signup_username').bind('keyup keypress blur', fu
 
 					<?php /***** Basic Account Details ******/ ?>
 
-					<h4><?php _e( 'Account Details', 'buddypress' ) ?></h4>
+					<h4><?php _e( 'Enter your account details', 'buddypress' ) ?></h4>
 
 					<label for="signup_username"><?php _e( 'Username', 'buddypress' ) ?> <?php _e( '(required)', 'buddypress' ) ?></label>
 					<?php do_action( 'bp_signup_username_errors' ) ?>
@@ -73,6 +72,15 @@ $('#basic-details-section input#signup_username').bind('keyup keypress blur', fu
 				<?php if ( bp_is_active( 'xprofile' ) ) : ?>
 
 					<?php do_action( 'bp_before_signup_profile_fields' ) ?>
+					
+					<!-- start include social login buttons here -->
+					<div class="register-section" id="profile-social-login-section">
+					
+					<h4>Or connect using social login</h4>
+					<?php do_action('oa_social_login'); ?>
+					
+					</div>
+					<!-- end include social login buttons here -->
 
 					<div class="register-section" id="profile-details-section">
 
