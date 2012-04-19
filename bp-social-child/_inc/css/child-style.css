@@ -92,8 +92,8 @@ a.like.loading, a.unlike.loading,  {
 	background-image: url( ../images/ajax-loader.gif ), -ms-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* IE10+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( enabled=0 ); /* IE6-9 */
 	background-image: url( ../images/ajax-loader.gif ), linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* W3C */
-	background-position: 95% 50%;
-	background-repeat: no-repeat;
+	background-position: 95% 50% !important;
+	background-repeat: no-repeat !important;
 	padding-right: 25px;
 }
 a.like.loading:hover, a.unlike.loading:hover {
@@ -106,6 +106,8 @@ a.like.loading:hover, a.unlike.loading:hover {
 	background-image: url( ../images/ajax-loader.gif ), linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* W3C */
 	border: 1px solid #ccc;
 	padding-right: 25px;
+	background-position: 95% 50% !important;
+	background-repeat: no-repeat !important;
 }
 
 
