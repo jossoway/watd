@@ -110,4 +110,6 @@ a.like.loading:hover, a.unlike.loading:hover {
 	background-repeat: no-repeat !important;
 }
 
-
+/* CSS tweak to fix Q&A page */
+#qa-page-wrapper { width: 600px!important; }
+.question-summary { width: 80%!important; }
