@@ -43,7 +43,7 @@ width: 48%;
 
 /* Buttons and Ajax loading */
 
-a.like, a.unlike
+a.like, a.unlike, a.view-likes
  {
 	background: #fff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%); /* FF3.6+ */
@@ -69,7 +69,9 @@ a.like, a.unlike
 a.like:hover,
 a.like:focus,
 a.unlike:hover,
-a.unlike:focus {
+a.unlike:focus, 
+a.view-likes:hover,
+a.view-likes:focus {
 	background: #ededed;
 	background: -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
@@ -84,7 +86,7 @@ a.unlike:focus {
 	text-decoration: none;
 }
 
-a.like.loading, a.unlike.loading,  {
+a.like.loading, a.unlike.loading, a.view-likes.loading  {
 	background-image: url( ../images/ajax-loader.gif ), -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
 	background-image: url( ../images/ajax-loader.gif ), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
 	background-image: url( ../images/ajax-loader.gif ), -webkit-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
@@ -96,7 +98,7 @@ a.like.loading, a.unlike.loading,  {
 	background-repeat: no-repeat !important;
 	padding-right: 25px;
 }
-a.like.loading:hover, a.unlike.loading:hover {
+a.like.loading:hover, a.unlike.loading:hover, a.view-likes:hover {
   	background-image: url( ../images/ajax-loader.gif ), -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
 	background-image: url( ../images/ajax-loader.gif ), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
 	background-image: url( ../images/ajax-loader.gif ), -webkit-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
