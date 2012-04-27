@@ -36,8 +36,7 @@ $('#basic-details-section input#signup_username').bind('keyup keypress blur', fu
 
 				<?php do_action( 'template_notices' ) ?>
 
-				<p><?php _e( 'Registering for this site is easy, just fill in the fields below and we\'ll get a new account set up for you in no time.', 'buddypress' ) ?></p>
-				
+				<p><?php _e( 'It\'s easy to join We Are The Dads. Just fill in the details below, check your email and click the link.', 'buddypress' ) ?></p>
 
 				<?php do_action( 'bp_before_account_details_fields' ) ?>
 
@@ -240,6 +239,8 @@ $('#basic-details-section input#signup_username').bind('keyup keypress blur', fu
 				<div class="submit">
 					<input type="submit" name="signup_submit" id="signup_submit" value="<?php _e( 'Complete Sign Up', 'buddypress' ) ?>" />
 				</div>
+				
+				<p>By registering for this site you accept the <a href="/terms-of-service/">Terms of Service</a>.</p>
 
 				<?php do_action( 'bp_after_registration_submit_buttons' ) ?>
 
