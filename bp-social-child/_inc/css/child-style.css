@@ -131,13 +131,13 @@ margin-left: 175px !important;
 
 /* Fix for RH people you may know menu (buttons not visible) */
 
-ul#members-list li
+ul#members-list.suggested-friend-item-list li
 {
 overflow: visible;
 padding-bottom: 5px;
 }
 
-ul#members-list li div.item-title, ul.item-list li h4
+ul#members-list.suggested-friend-item-list li div.item-title, ul#members-list.suggested-friend-item-list li h4
 {
 float: left;
 width: 22%;
@@ -145,13 +145,13 @@ font-size: 11px;
 }
 
 
-ul#members-list li div.action
+ul#members-list.suggested-friend-item-list li div.action
 {
 position: relative;
 top: 3px;
 }
 
-ul#members-list li div.action span.remove-friend-suggestion
+ul#members-list.suggested-friend-item-list li div.action span.remove-friend-suggestion
 {
 float: right;
 margin-left: 5px;
