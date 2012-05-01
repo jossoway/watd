@@ -41,6 +41,11 @@ float: right;
 width: 48%;
 }
 
+#register-page h2, #register-page p
+{
+font-size: 14px;
+}
+
 /* Buttons and Ajax loading */
 
 a.like, a.unlike, a.view-likes
@@ -115,3 +120,39 @@ a.like.loading:hover, a.unlike.loading:hover, a.view-likes:hover {
 /* CSS tweak to fix Q&A page */
 #qa-page-wrapper { width: 600px!important; }
 .question-summary { width: 80%!important; }
+
+
+/* CSS tweak to remove margin / speechbubble thing on post threads */
+
+body.activity-permalink .activity-list li .activity-content
+{
+margin-left: 175px !important;
+}
+
+/* Fix for RH people you may know menu (buttons not visible) */
+
+ul#members-list li
+{
+overflow: visible;
+padding-bottom: 5px;
+}
+
+ul#members-list li div.item-title, ul.item-list li h4
+{
+float: left;
+width: 22%;
+font-size: 11px;
+}
+
+
+ul#members-list li div.action
+{
+position: relative;
+top: 3px;
+}
+
+ul#members-list li div.action span.remove-friend-suggestion
+{
+float: right;
+margin-left: 5px;
+}
