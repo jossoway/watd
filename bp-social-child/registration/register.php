@@ -36,7 +36,7 @@ $('#basic-details-section input#signup_username').bind('keyup keypress blur', fu
 
 				<?php do_action( 'template_notices' ) ?>
 
-				<p><?php _e( 'It\'s easy to join We Are The Dads. Just fill in the details below, check your email and click the link.', 'buddypress' ) ?></p>
+				<p><?php _e( 'It\'s easy to join We Are The Dads. Just fill in the details below, check your email and click the link (recommended if you want to choose an anonymous username). Or you can join with an existing social media account and skip the verification stage.', 'buddypress' ) ?></p>
 
 				<?php do_action( 'bp_before_account_details_fields' ) ?>
 
