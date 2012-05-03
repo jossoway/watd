@@ -156,3 +156,9 @@ ul#members-list.suggested-friend-item-list li div.action span.remove-friend-sugg
 float: right;
 margin-left: 5px;
 }
+
+div.activity-comments ul li > ul 
+{
+margin-left: 10px;
+margin-top: 0;
+padding-left: 5px;
