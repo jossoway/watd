@@ -37,5 +37,30 @@ function bpdev_filter_profile_fields_by_usertype($fields,$group_id){
 
 }
 
-?>
+// Use different functions if you want to modify question and answer editors differently
+add_filter( 'qa_question_editor_settings', 'my_modify_editor_function', 10, 2 );
+add_filter( 'qa_answer_editor_settings', 'my_modify_editor_function', 10, 2 );
+function my_modify_editor_function( $settings, $ID ) {
+	// Dont use visual editor for visitors
+	if ( !is_user_logged_in() ) {
+		$tinymce = false;
+	}
+	// Add some tinyMCE plugins and buttons for admins. Don't forget to check if they work in your theme.
+	else if ( current_user_can( 'manage_options' ) ) {
+		$tinymce['plugins']='inlinepopups,tabfocus,paste,media,fullscreen';
+		$tinymce['theme_advanced_buttons2']='pastetext,pasteword,removeformat,|,charmap,|,outdent,indent,|,undo,redo';
+	}
+	// Use minimal editor for other roles
+	else {
+		$tinymce['teeny'] = true;
+	}
+	// Make something special for question #1 and answer #1
+	if ( 1 == $ID )
+		$tinymce['theme_advanced_buttons1']='formatselect,forecolor,|,bold,italic,underline';
 
+	$settings['tinymce'] = $tinymce;
+
+	return $settings;
+}
+
+?>
